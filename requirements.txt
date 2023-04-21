@@ -1,0 +1,6 @@
+transformers==4.27.1
+torch>=1.10
+gradio
+accelerate
+peft
+mdtex2html
