@@ -108,4 +108,7 @@ class ChatGLM(LLM):
 
 
 llm = ChatGLM()
-llm('abc')
+print('----------------------')
+print(llm)
+print('================================')
+print(llm('你呀傻逼'))
