@@ -4,3 +4,7 @@ gradio
 accelerate
 peft
 mdtex2html
+sentencepiece
+fastapi
+whisper
+python-multipart
