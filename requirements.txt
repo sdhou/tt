@@ -8,3 +8,4 @@ sentencepiece
 fastapi
 whisper
 python-multipart
+uvicorn

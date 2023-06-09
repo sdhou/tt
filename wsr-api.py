@@ -3,6 +3,7 @@ from fastapi.responses import RedirectResponse
 import whisper
 import time
 import shutil
+import os
 from fastapi.responses import JSONResponse
 app = FastAPI()
 
@@ -14,7 +15,7 @@ async def index():
 
 @app.post("/asr", tags=["Endpoints"])
 async def asr(audio_file: UploadFile = File(...)):
-    file = '/opt/code/tt/tmp/'+str(time.time())
+    file = os.getcwd()+'/tmp/'+str(time.time())
     with open(file, 'wb+') as file_object:
         shutil.copyfileobj(audio_file.file, file_object)
     model = whisper.load_model("base")
